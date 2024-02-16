@@ -4,12 +4,12 @@ import pandas as pd
 df = pd.read_csv("big-mac-full-index.csv")
 # print(df.head())
 
-# # using iterrows()
+# using iterrows()
 for i,r in df.iterrows():
     print(r[r"date"],
           r["iso_a3"])
-# # r is the row
+# r is the row
 
-# # using apply()
+# using apply()
 print(df.apply(lambda row: row ["iso_a3"], axis = 1))
-# #  axis = y-axis
+# axis = y-axis
